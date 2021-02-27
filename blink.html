@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>blink</title>
+    <style>
+      body {
+        background: linear-gradient(to right, rgb(126, 126, 124), pink);
+      }
+      h1 {
+        text-align: center;
+        font-size: 10em;
+        font-family: Helvetica;
+        color: aquamarine;
+      }
+    </style>
+    <script type="text/javascript">
+      function blink()
+      {
+        let body = document.querySelector('body');
+        if (body.style.visibility === 'hidden')
+        {
+          body.style.visibility = 'visible';
+        }
+        else
+        {
+          body.style.visibility = 'hidden';
+        }
+      }
+      // Blink ever 500ms
+      window.setInterval(blink, 500);
+    </script>
+  </head>
+  <body>
+    <h1>Jesus is Lord!</h1>
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur dolorum officia.</p> -->
+  </body>
+</html>
